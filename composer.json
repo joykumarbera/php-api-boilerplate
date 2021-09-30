@@ -1,0 +1,6 @@
+{
+    "require": {
+        "izniburak/router": "^2.3",
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
