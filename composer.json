@@ -2,5 +2,11 @@
     "require": {
         "izniburak/router": "^2.3",
         "vlucas/phpdotenv": "^5.3"
+    },
+    
+    "autoload": {
+        "classmap": [
+            "app/Controllers/BaseController.php"
+        ]
     }
 }

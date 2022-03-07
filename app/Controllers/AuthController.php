@@ -5,15 +5,23 @@ namespace App\Controllers;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class AuthController
+class AuthController extends BaseController
 {
-    public function main(Request $request, Response $response)
+    public function postLogin(Request $request, Response $response) 
     {
         $response->setContent(json_encode([
-            'data' => 123,
+            'login' => 'post',
         ]));
-        $response->headers->set('Content-Type', 'application/json');
 
+        return $response;
+    }
+
+    public function postSignup(Request $request, Response $response) 
+    {
+        $response->setContent(json_encode([
+            'signup' => 'response',
+        ]));
+        
         return $response;
     }
 }
